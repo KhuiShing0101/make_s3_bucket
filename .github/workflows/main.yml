@@ -18,7 +18,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Create S3 Bucket
         run: |
-          aws s3 mb s3://$ {{ github.event.inputs.bucketName }}
+          aws s3 mb s3://${{ github.event.inputs.bucketName }}
         
         
     
